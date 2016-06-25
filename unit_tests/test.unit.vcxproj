@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F7AD6EB0-C105-3944-85C0-AC84E9E014EC}</ProjectGuid>
+    <RootNamespace>test.unit</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\bin\Debug\</OutDir>
+    <IntDir>..\obj\x32\Debug\test.unit\</IntDir>
+    <TargetName>test.unit</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\bin\Debug\</OutDir>
+    <IntDir>..\obj\x64\Debug\test.unit\</IntDir>
+    <TargetName>test.unit</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\bin\Release\</OutDir>
+    <IntDir>..\obj\x32\Release\test.unit\</IntDir>
+    <TargetName>test.unit</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\bin\Release\</OutDir>
+    <IntDir>..\obj\x64\Release\test.unit\</IntDir>
+    <TargetName>test.unit</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/Gm /Zi /FI oolua_tests_pch.h %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>include\cppunit;include\gmock;include\lua;include;..\include;\usr\local\include;\usr\include;bind_classes;cpp_classes;test_classes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG;_DEBUG;PLATFORM_CHECKED;WINDOWS_BUILD;WIN32;OOLUA_USE_PRECOMPILED_HEADER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <SmallerTypeCheck>true</SmallerTypeCheck>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>oolua_tests_pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)test.unit.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>DEBUG;_DEBUG;PLATFORM_CHECKED;WINDOWS_BUILD;WIN32;OOLUA_USE_PRECOMPILED_HEADER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include\cppunit;include\gmock;include\lua;include;..\include;\usr\local\include;\usr\include;bind_classes;cpp_classes;test_classes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>lua51.lib;cppunitd.lib;gmockd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)test.unit.exe</OutputFile>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>&quot;$(TargetPath)&quot;</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>/Gm /Zi /FI oolua_tests_pch.h %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>include\cppunit;include\gmock;include\lua;include;..\include;\usr\local\include;\usr\include;bind_classes;cpp_classes;test_classes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DEBUG;_DEBUG;PLATFORM_CHECKED;WINDOWS_BUILD;WIN32;OOLUA_USE_PRECOMPILED_HEADER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <SmallerTypeCheck>true</SmallerTypeCheck>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>oolua_tests_pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)test.unit.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>DEBUG;_DEBUG;PLATFORM_CHECKED;WINDOWS_BUILD;WIN32;OOLUA_USE_PRECOMPILED_HEADER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include\cppunit;include\gmock;include\lua;include;..\include;\usr\local\include;\usr\include;bind_classes;cpp_classes;test_classes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>lua51.lib;cppunitd.lib;gmockd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)test.unit.exe</OutputFile>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>&quot;$(TargetPath)&quot;</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/FI oolua_tests_pch.h /MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>include\cppunit;include\gmock;include\lua;include;..\include;\usr\local\include;\usr\include;bind_classes;cpp_classes;test_classes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;RELEASE;PLATFORM_CHECKED;WINDOWS_BUILD;WIN32;OOLUA_USE_PRECOMPILED_HEADER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>oolua_tests_pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;RELEASE;PLATFORM_CHECKED;WINDOWS_BUILD;WIN32;OOLUA_USE_PRECOMPILED_HEADER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include\cppunit;include\gmock;include\lua;include;..\include;\usr\local\include;\usr\include;bind_classes;cpp_classes;test_classes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>lua51.lib;cppunit.lib;gmock.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)test.unit.exe</OutputFile>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>&quot;$(TargetPath)&quot;</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>/FI oolua_tests_pch.h /MP %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>include\cppunit;include\gmock;include\lua;include;..\include;\usr\local\include;\usr\include;bind_classes;cpp_classes;test_classes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;RELEASE;PLATFORM_CHECKED;WINDOWS_BUILD;WIN32;OOLUA_USE_PRECOMPILED_HEADER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>oolua_tests_pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;RELEASE;PLATFORM_CHECKED;WINDOWS_BUILD;WIN32;OOLUA_USE_PRECOMPILED_HEADER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include\cppunit;include\gmock;include\lua;include;..\include;\usr\local\include;\usr\include;bind_classes;cpp_classes;test_classes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>lua51.lib;cppunit.lib;gmock.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)test.unit.exe</OutputFile>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>&quot;$(TargetPath)&quot;</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="bind_classes\expose_class_constructors.h" />
+    <ClInclude Include="bind_classes\expose_class_enums.h" />
+    <ClInclude Include="bind_classes\expose_class_ops.h" />
+    <ClInclude Include="bind_classes\expose_const_func.h" />
+    <ClInclude Include="bind_classes\expose_enum.h" />
+    <ClInclude Include="bind_classes\expose_false_integral_function_params.h" />
+    <ClInclude Include="bind_classes\expose_false_integral_function_returns.h" />
+    <ClInclude Include="bind_classes\expose_hierarchy.h" />
+    <ClInclude Include="bind_classes\expose_integral_function_params.h" />
+    <ClInclude Include="bind_classes\expose_integral_function_returns.h" />
+    <ClInclude Include="bind_classes\expose_max_params.h" />
+    <ClInclude Include="bind_classes\expose_method_returns_class.h" />
+    <ClInclude Include="bind_classes\expose_namespaced_class.h" />
+    <ClInclude Include="bind_classes\expose_out_params.h" />
+    <ClInclude Include="bind_classes\expose_ownership.h" />
+    <ClInclude Include="bind_classes\expose_public_instances.h" />
+    <ClInclude Include="bind_classes\expose_static_and_c_functions.h" />
+    <ClInclude Include="bind_classes\expose_stub_classes.h" />
+    <ClInclude Include="bind_classes\expose_userdata_function_params.h" />
+    <ClInclude Include="bind_classes\expose_userdata_function_returns.h" />
+    <ClInclude Include="bind_classes\expose_vector_int.h" />
+    <ClInclude Include="cpp_classes\cpp_class_enums.h" />
+    <ClInclude Include="cpp_classes\cpp_class_in_namespace.h" />
+    <ClInclude Include="cpp_classes\cpp_class_ops.h" />
+    <ClInclude Include="cpp_classes\cpp_constructor_mock.h" />
+    <ClInclude Include="cpp_classes\cpp_const_funcs.h" />
+    <ClInclude Include="cpp_classes\cpp_enum.h" />
+    <ClInclude Include="cpp_classes\cpp_false_integral_function_params.h" />
+    <ClInclude Include="cpp_classes\cpp_false_integral_function_returns.h" />
+    <ClInclude Include="cpp_classes\cpp_function_params.h" />
+    <ClInclude Include="cpp_classes\cpp_function_returns.h" />
+    <ClInclude Include="cpp_classes\cpp_hierarchy.h" />
+    <ClInclude Include="cpp_classes\cpp_integral_function_params.h" />
+    <ClInclude Include="cpp_classes\cpp_integral_function_returns.h" />
+    <ClInclude Include="cpp_classes\cpp_max_params.h" />
+    <ClInclude Include="cpp_classes\cpp_method_returns_class.h" />
+    <ClInclude Include="cpp_classes\cpp_out_params.h" />
+    <ClInclude Include="cpp_classes\cpp_private_destructor.h" />
+    <ClInclude Include="cpp_classes\cpp_public_instances.h" />
+    <ClInclude Include="cpp_classes\cpp_pulls_stub_param.h" />
+    <ClInclude Include="cpp_classes\cpp_static_and_c_functions.h" />
+    <ClInclude Include="cpp_classes\cpp_stub_classes.h" />
+    <ClInclude Include="cpp_classes\cpp_userdata_function_params.h" />
+    <ClInclude Include="cpp_classes\cpp_userdata_function_returns.h" />
+    <ClInclude Include="test_classes\class_method_returns_class.h" />
+    <ClInclude Include="test_classes\common_cppunit_headers.h" />
+    <ClInclude Include="test_classes\oolua_tests_pch.h" />
+    <ClInclude Include="test_classes\userdata_function_returns.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_class_constructors.cpp">
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_class_enums.cpp">
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_class_ops.cpp">
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_const_func.cpp">
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_enum.cpp">
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_false_integral_function_params.cpp">
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_false_integral_function_returns.cpp">
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_hierarchy.cpp">
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_integral_function_params.cpp">
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_integral_function_returns.cpp">
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_max_params.cpp">
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_method_returns_class.cpp">
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_namespaced_class.cpp">
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_out_params.cpp">
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_ownership.cpp">
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_public_instances.cpp">
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_static_and_c_functions.cpp">
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_stub_classes.cpp">
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_userdata_function_params.cpp">
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_userdata_function_returns.cpp">
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_vector_int.cpp">
+    </ClCompile>
+    <ClCompile Include="cpp_classes\cpp_constructor_mock.cpp">
+    </ClCompile>
+    <ClCompile Include="cpp_classes\cpp_private_destructor.cpp">
+    </ClCompile>
+    <ClCompile Include="cpp_classes\cpp_public_instances.cpp">
+    </ClCompile>
+    <ClCompile Include="cpp_classes\cpp_userdata_function_returns.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\class_exchange.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\class_member_enums.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\class_method_returns_class.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\construct.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\const_functions.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\destruct.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\enum_tests.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\error_check.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\exchange_cpp2lua.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\exchange_lua2cpp.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\false_integral_function_params.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\false_integral_function_returns.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\hello_moon.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\hierarchy.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\integral_function_out_params.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\integral_function_param_types.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\integral_function_returns.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\light_ud.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\lua_caller.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\lua_globals.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\lua_reference.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\max_params.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\metatable_check.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\namespaced_class.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\oolua_module.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\oolua_tests_pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="test_classes\operators.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\out_params.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\pointer_cache_first_members.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\public_variables.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\push_pull.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\return_order.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\set_ownership.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\static_function.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\table.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\traits.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\userdata.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\userdata_function_out_params.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\userdata_function_params.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\userdata_function_returns.cpp">
+    </ClCompile>
+    <ClCompile Include="test_classes\vector_int.cpp">
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\oolua.vcxproj">
+      <Project>{80DBC2A4-22FC-3C48-A973-8644F50671F4}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

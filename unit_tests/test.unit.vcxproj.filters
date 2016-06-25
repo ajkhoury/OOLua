@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="bind_classes">
+      <UniqueIdentifier>{66DB2913-FAE1-514D-9F8B-6FE6A0E01EF8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp_classes">
+      <UniqueIdentifier>{95BB7D14-8C24-CD42-858C-87650BAEFAD9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="test_classes">
+      <UniqueIdentifier>{62675A57-3A93-874C-93D8-4A167CD2DF1A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bind_classes\expose_class_constructors.h">
+      <Filter>bind_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="bind_classes\expose_class_enums.h">
+      <Filter>bind_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="bind_classes\expose_class_ops.h">
+      <Filter>bind_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="bind_classes\expose_const_func.h">
+      <Filter>bind_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="bind_classes\expose_enum.h">
+      <Filter>bind_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="bind_classes\expose_false_integral_function_params.h">
+      <Filter>bind_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="bind_classes\expose_false_integral_function_returns.h">
+      <Filter>bind_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="bind_classes\expose_hierarchy.h">
+      <Filter>bind_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="bind_classes\expose_integral_function_params.h">
+      <Filter>bind_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="bind_classes\expose_integral_function_returns.h">
+      <Filter>bind_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="bind_classes\expose_max_params.h">
+      <Filter>bind_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="bind_classes\expose_method_returns_class.h">
+      <Filter>bind_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="bind_classes\expose_namespaced_class.h">
+      <Filter>bind_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="bind_classes\expose_out_params.h">
+      <Filter>bind_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="bind_classes\expose_ownership.h">
+      <Filter>bind_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="bind_classes\expose_public_instances.h">
+      <Filter>bind_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="bind_classes\expose_static_and_c_functions.h">
+      <Filter>bind_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="bind_classes\expose_stub_classes.h">
+      <Filter>bind_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="bind_classes\expose_userdata_function_params.h">
+      <Filter>bind_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="bind_classes\expose_userdata_function_returns.h">
+      <Filter>bind_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="bind_classes\expose_vector_int.h">
+      <Filter>bind_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp_classes\cpp_class_enums.h">
+      <Filter>cpp_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp_classes\cpp_class_in_namespace.h">
+      <Filter>cpp_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp_classes\cpp_class_ops.h">
+      <Filter>cpp_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp_classes\cpp_constructor_mock.h">
+      <Filter>cpp_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp_classes\cpp_const_funcs.h">
+      <Filter>cpp_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp_classes\cpp_enum.h">
+      <Filter>cpp_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp_classes\cpp_false_integral_function_params.h">
+      <Filter>cpp_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp_classes\cpp_false_integral_function_returns.h">
+      <Filter>cpp_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp_classes\cpp_function_params.h">
+      <Filter>cpp_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp_classes\cpp_function_returns.h">
+      <Filter>cpp_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp_classes\cpp_hierarchy.h">
+      <Filter>cpp_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp_classes\cpp_integral_function_params.h">
+      <Filter>cpp_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp_classes\cpp_integral_function_returns.h">
+      <Filter>cpp_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp_classes\cpp_max_params.h">
+      <Filter>cpp_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp_classes\cpp_method_returns_class.h">
+      <Filter>cpp_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp_classes\cpp_out_params.h">
+      <Filter>cpp_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp_classes\cpp_private_destructor.h">
+      <Filter>cpp_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp_classes\cpp_public_instances.h">
+      <Filter>cpp_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp_classes\cpp_pulls_stub_param.h">
+      <Filter>cpp_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp_classes\cpp_static_and_c_functions.h">
+      <Filter>cpp_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp_classes\cpp_stub_classes.h">
+      <Filter>cpp_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp_classes\cpp_userdata_function_params.h">
+      <Filter>cpp_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="cpp_classes\cpp_userdata_function_returns.h">
+      <Filter>cpp_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="test_classes\class_method_returns_class.h">
+      <Filter>test_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="test_classes\common_cppunit_headers.h">
+      <Filter>test_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="test_classes\oolua_tests_pch.h">
+      <Filter>test_classes</Filter>
+    </ClInclude>
+    <ClInclude Include="test_classes\userdata_function_returns.h">
+      <Filter>test_classes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="bind_classes\expose_class_constructors.cpp">
+      <Filter>bind_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_class_enums.cpp">
+      <Filter>bind_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_class_ops.cpp">
+      <Filter>bind_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_const_func.cpp">
+      <Filter>bind_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_enum.cpp">
+      <Filter>bind_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_false_integral_function_params.cpp">
+      <Filter>bind_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_false_integral_function_returns.cpp">
+      <Filter>bind_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_hierarchy.cpp">
+      <Filter>bind_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_integral_function_params.cpp">
+      <Filter>bind_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_integral_function_returns.cpp">
+      <Filter>bind_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_max_params.cpp">
+      <Filter>bind_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_method_returns_class.cpp">
+      <Filter>bind_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_namespaced_class.cpp">
+      <Filter>bind_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_out_params.cpp">
+      <Filter>bind_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_ownership.cpp">
+      <Filter>bind_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_public_instances.cpp">
+      <Filter>bind_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_static_and_c_functions.cpp">
+      <Filter>bind_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_stub_classes.cpp">
+      <Filter>bind_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_userdata_function_params.cpp">
+      <Filter>bind_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_userdata_function_returns.cpp">
+      <Filter>bind_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="bind_classes\expose_vector_int.cpp">
+      <Filter>bind_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp_classes\cpp_constructor_mock.cpp">
+      <Filter>cpp_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp_classes\cpp_private_destructor.cpp">
+      <Filter>cpp_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp_classes\cpp_public_instances.cpp">
+      <Filter>cpp_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="cpp_classes\cpp_userdata_function_returns.cpp">
+      <Filter>cpp_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\class_exchange.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\class_member_enums.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\class_method_returns_class.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\construct.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\const_functions.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\destruct.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\enum_tests.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\error_check.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\exchange_cpp2lua.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\exchange_lua2cpp.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\false_integral_function_params.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\false_integral_function_returns.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\hello_moon.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\hierarchy.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\integral_function_out_params.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\integral_function_param_types.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\integral_function_returns.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\light_ud.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\lua_caller.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\lua_globals.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\lua_reference.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\max_params.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\metatable_check.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\namespaced_class.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\oolua_module.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\oolua_tests_pch.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\operators.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\out_params.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\pointer_cache_first_members.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\public_variables.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\push_pull.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\return_order.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\set_ownership.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\static_function.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\table.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\traits.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\userdata.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\userdata_function_out_params.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\userdata_function_params.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\userdata_function_returns.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+    <ClCompile Include="test_classes\vector_int.cpp">
+      <Filter>test_classes</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

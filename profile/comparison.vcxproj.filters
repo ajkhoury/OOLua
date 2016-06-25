@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="hierarchy.h" />
+    <ClInclude Include="hierarchy_expose.h" />
+    <ClInclude Include="RefCountedPtr.h" />
+    <ClInclude Include="set_and_get.h" />
+    <ClInclude Include="set_n_get_expose.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="compare.cpp" />
+    <ClCompile Include="hierarchy_expose.cpp" />
+    <ClCompile Include="set_n_get_expose.cpp" />
+    <ClCompile Include="swig_profile_wrap.cpp" />
+  </ItemGroup>
+</Project>
